@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Employee Details"
+                android:textColor="#90c40909"
+                android:textSize="33dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center">
+
+
+                <EditText
+                    android:id="@+id/Edt_Name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Full Name"
+                    android:inputType="textPersonName" />
+
+
+                <EditText
+                    android:id="@+id/Edt_Age"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Age"
+                    android:inputType="number" />
+
+
+                <EditText
+                    android:id="@+id/Edt_Designation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Designation"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/Edt_Department"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Department"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/Edt_Salary"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Salary"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/Btn_Add"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="#b45705"
+                    android:text="Add Details"
+                    android:textColor="#fff"/>
+
+                <Button
+                    android:id="@+id/Btn_Show"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="#4CAF50"
+                    android:text="Show Employee Details"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
